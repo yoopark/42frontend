@@ -1,0 +1,40 @@
+nav ul {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+nav ul li {
+	overflow: hidden;
+	float: left;
+	background-color: #2DB400;
+	color: white;
+	padding: 20px 28px;
+}
+
+body {
+	background: linear-gradient(to bottom, white, #E2E2E2); 
+}
+
+h1 {
+	text-align: center;
+	color: #2DB400;
+	font-size: 55px;
+	font-family: "Arial Black";
+	font-weight: bold;
+}
+
+#search {
+	display : block;
+	margin : 0 auto;
+	width: 600px;
+	height: 50px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2DB400;
+	border-radius: 4px;
+	font-family: "Arial";
+	font-size: 18px;
+	padding-left: 15px;
+}
