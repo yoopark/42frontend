@@ -1,16 +1,13 @@
 nav ul {
 	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
 }
 
 nav ul li {
-	overflow: hidden;
+	list-style-type: none;
 	float: left;
 	background-color: #2DB400;
 	color: white;
-	padding: 20px 28px;
+	padding: 20px 30px;
 }
 
 body {
