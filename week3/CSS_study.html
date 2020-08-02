@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 구글폰트 적용! -->
+	<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap" rel="stylesheet">
+	<title>Document</title>
+	<style>
+		/* Normalize CSS */
+		/* 모든 요소에 스타일을 적용함 */
+		* {
+			font-family: 'Red Rose', cursive;
+			margin: 0;
+			padding: 0;
+		}
+		/* ul,ol태그의 기본 스타일을 제거.. 저는 이걸 자주사용합니다~ */
+		ul, ol {
+			list-style: none;
+		}
+
+		#header {
+			border: 1px solid #aaa;
+			/* flex에 대해 공부해보세요! */
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 5px 10px 5px;
+		}
+		#content {
+		}
+
+		#content .jumbotron {
+			height: 300px;
+			width: 100%;
+			background-color: hotpink;
+			/* 정가운데 정렬하는 방법입니다. flex쓰세요 */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#content .section {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 500px;
+		}
+
+		.blue-box {
+			background-color: royalblue;
+		}
+		#content .section > .section-item {
+			flex: 1;
+			/* 100%라 함은 자신 바로 부모의 높이의 100%만큼 높이를 가지겠다.. 라는 뜻입니다. */
+			height: 100%;
+			border: 1px solid #aaa;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		#footer {
+			height: 300px;
+			background-color: indigo;
+		}
+
+		/* 초록색 circle을 우측하단에 fixed. 브라우저스크롤을 해도 그대로 멈춰있습니다. */
+		#circle {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background: green;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+		}
+	</style>
+	</head>
+	<body>
+		<div id="header">
+			<div style="header-left">
+				<h3>LeftMenu</h3>
+			</div>
+			<div style="header-right">
+				<h3>RightMenu</h3>
+			</div>
+		</div>
+		<div id="content">
+			<div class="jumbotron">분홍색 점보트론</div>
+			<div class="section">
+				<div class="section-item">
+					<h3><a href="https://heropy.blog/2018/11/24/css-flexible-box/">flex에 대해 알아보기</a></h3>
+				</div>
+				<div class="section-item">
+					<h3>
+						<a href="https://developer.mozilla.org/ko/docs/Web/CSS/position">
+							Position에 대해 알아보기
+						</a>
+					</h3>
+				</div>
+				<div class="section-item">
+					Item
+				</div>
+			</div>
+			<div class="section blue-box">
+				Section
+			</div>
+		</div>
+		<div id="footer"></div>
+		<div id="circle"></div>
+	</body>
+</html>
