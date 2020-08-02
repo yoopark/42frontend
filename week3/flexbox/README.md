@@ -14,5 +14,5 @@
 	- flex
 	- align-self
 
-https://www.youtube.com/watch?v=7neASrWEFEM
-https://flexboxfroggy.com/#ko
+* https://www.youtube.com/watch?v=7neASrWEFEM
+* https://flexboxfroggy.com/#ko
