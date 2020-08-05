@@ -1,0 +1,95 @@
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url(NotoSansKR-Medium.woff2);
+}
+
+body {
+	font-family: 'Noto Sans KR';
+	font-size: 14px;
+	background-color: #EBEBEB;
+	margin: 0;
+	padding: 0;
+	word-break: keep-all;
+}
+
+a {
+	color: black;
+}
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#header, div > div, footer > div {
+	padding: 10px 30px;
+	border-bottom: 1px solid black;
+}
+
+#header {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	z-index: 3;
+}
+
+#header a {
+	font-size: 12px;
+}
+
+#main .main-image {
+	text-align: center;
+	position: relative;
+	top: -30px;
+	z-index: 2;
+}
+
+#main .main-message {
+	/* top: -100px; */
+	z-index: 1;
+}
+
+#main .main-message h1 {
+	text-align: center;
+}
+
+#subscribe .subscribe-main {
+	background-color: #FB7800;
+}
+
+#subscribe .subscribe-main p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+input {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+input[type="text"] {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	width: 400px;
+	padding: 15px 15px;
+}
+
+/* input[type="checkbox"]::selection {
+	background-color: #161616;
+	color: #ffffff;
+} */
+
+input[type="submit"] {
+	padding: 15px 15px;
+	margin-bottom: 30px;
+	background-color: black;
+	border-width: 0px;
+	color: white;
+	font-size: 12px;
+}
+
+input[type="submit"]:hover {
+	border-width: 1px solid black;
+	background-color: white;
+	color: black;
+}
