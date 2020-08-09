@@ -20,17 +20,14 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	z-index: 3;
 }
 
 #header, div > div, footer > div {
 	padding: 10px 30px;
 	border-bottom: 1px solid black;
-}
-
-#header {
-	padding-top: 40px;
-	padding-bottom: 40px;
-	z-index: 3;
 }
 
 #header a {
@@ -67,6 +64,7 @@ a {
 #subscribe .subscribe-main p {
 	margin-top: 20px;
 	margin-bottom: 20px;
+	line-height: 160%;
 }
 
 #subscribe .subscribe-people {
@@ -118,3 +116,4 @@ input[type="submit"]:hover {
 		right: -200px;
 	}
 }
+
