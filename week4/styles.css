@@ -39,13 +39,20 @@ a {
 
 #main .main-image {
 	text-align: center;
+}
+
+#main .main-image img {
 	position: relative;
+	float: center;
+	width: 80%;
+	height: 80%;
 	top: -30px;
 	z-index: 2;
 }
 
 #main .main-message {
-	/* top: -100px; */
+	font-family: 'Noto Sans KR Bold';
+	position: relative;
 	z-index: 1;
 }
 
@@ -62,6 +69,10 @@ a {
 	margin-bottom: 20px;
 }
 
+#subscribe .subscribe-people {
+	font-family: 'Noto Sans KR Bold';
+}
+
 input {
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -73,11 +84,6 @@ input[type="text"] {
 	width: 400px;
 	padding: 15px 15px;
 }
-
-/* input[type="checkbox"]::selection {
-	background-color: #161616;
-	color: #ffffff;
-} */
 
 input[type="submit"] {
 	padding: 15px 15px;
@@ -92,4 +98,23 @@ input[type="submit"]:hover {
 	border-width: 1px solid black;
 	background-color: white;
 	color: black;
+}
+
+@media (min-width: 800px) {
+	#main .main-message h1 {
+		text-align: left;
+		font-size: 40px;
+	}
+
+	#main .main-image {
+		border-bottom: 0px;
+	}
+	#main .main-image img{
+		position: absolute;
+		float: right;
+		width: 500px;
+		height: 520px;
+		top: 150px;
+		right: -200px;
+	}
 }
